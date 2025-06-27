@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swag Apple Sign-Up</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .signup-card {
+      background-color: #1c1c1e;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 0 20px rgba(255, 242, 242, 0.929);
+      position: relative;
+      z-index: 10;
+    }
+
+    .form-control {
+      background-color: #2c2c2e;
+      color: #fff;
+      border: none;
+    }
+
+    .form-control::placeholder {
+      color: #888;
+    }
+
+    .btn-swag {
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 50px;
+    }
+
+    .btn-swag:hover {
+      background-color: #ccc;
+    }
+
+    a {
+      color: #aaa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* 🍏 Floating Apple Logo Animation Behind Content */
+    .floating-apple {
+      position: fixed;
+      width: 80px;
+      filter: invert(1);
+      opacity: 0.15;
+      z-index: 1;
+      animation: bounceY 8s ease-in-out infinite alternate,
+                 driftX 20s linear infinite alternate,
+                 driftY 25s linear infinite alternate;
+    }
+
+    @keyframes bounceY {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-80px); }
+    }
+
+    @keyframes driftX {
+      0% { left: 0%; }
+      100% { left: 90%; }
+    }
+
+    @keyframes driftY {
+      0% { top: 0%; }
+      100% { top: 85%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🍏 Floating Apple Logo Behind Content -->
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1024px-Apple_logo_black.svg.png" 
+    alt="Floating Apple" 
+    class="floating-apple">
+
+<!-- 🍔 Navbar -->
+<nav class="navbar navbar-dark bg-black px-3 justify-content-between">
+  <a class="navbar-brand text-white fw-bold" href="./HTMLBOOT.html">Home</a>
+
+  <!-- Burger on the right -->
+  <div class="d-flex align-items-center">
+    <button class="btn btn-outline-light btn-sm" id="burgerBtn">☰</button>
+  </div>
+</nav>
+
+<!-- 🌟 Hidden menu -->
+<div class="container-fluid mt-2" id="navMenu" style="display: none;">
+  <ul class="nav flex-column text-white bg-black rounded p-3">
+    <li class="nav-item"><a class="nav-link text-white">Store</a></li>
+    <li class="nav-item"><a class="nav-link text-white">Mac</a></li>
+    <li class="nav-item"><a class="nav-link text-white">iPad</a></li>
+    <li class="nav-item"><a class="nav-link text-white">iPhone</a></li>
+    <li class="nav-item"><a class="nav-link text-white">Watch</a></li>
+    <li class="nav-item"><a class="nav-link text-white">Vision</a></li>
+    <li class="nav-item"><a class="nav-link text-white">AirPods</a></li>
+    <li class="nav-item"><a class="nav-link text-white">TV & Home</a></li>
+    <li class="nav-item"><a class="nav-link text-white">Entertainment</a></li>
+    <li class="nav-item"><a class="nav-link text-white">Accessories</a></li>
+    <li class="nav-item"><a class="nav-link text-white">Support</a></li>
+    <li class="nav-item"><a class="nav-link text-white" href="./Applesignup.html">Sign-Up</a></li>
+  </ul>
+</div>
+<!-- End Hidden Menu -->
+
+<!-- 📝 Form Section -->
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+  <div class="col-md-6 signup-card">
+    <h2 class="text-center fw-bold mb-4">Create Your Swag ID 🍏</h2>
+
+    <form>
+      <div class="mb-3">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullName" placeholder="Mr.Swag">
+        <small id="nameCounter" style="color: white;">0 / 30</small>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Your @email.com">
+      </div>
+
+      <div class="mb-3">
+        <label for="dob" class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" id="dob">
+      </div>
+
+      <div class="mb-4">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="••••••••">
+        <small><a href="#" id="togglePass" class="text-secondary">Show Password</a></small>
+      </div>
+
+      <div class="d-grid mb-3">
+        <button type="submit" class="btn btn-swag btn-lg">Sign Up</button>
+        <div id="formStatus" class="text-center mt-3" style="display:none;"></div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<!--SCRIPT SECTION-->
+<!-- 🍔 Burger Toggle Script -->
+<script>
+  const burgerBtn = document.getElementById("burgerBtn");
+  const navMenu = document.getElementById("navMenu");
+
+  burgerBtn.addEventListener("click", () => {
+    navMenu.style.display = navMenu.style.display === "none" ? "block" : "none";
+  });
+</script>
+<!--True js page connect-->
+<script src="../Scripts/Applecreatejavaprog.js"></script>
+<!--True js page connect-->
+</body>
+</html>
