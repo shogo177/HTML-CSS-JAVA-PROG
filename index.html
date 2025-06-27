@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My iPhone Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- 🍏 Navbar -->
+<nav class="navbar navbar-light bg-light px-3 justify-content-between">
+  <a class="navbar-brand fw-bold" href="#">Home</a>
+
+  <!-- Search and Burger -->
+  <div class="d-flex align-items-center">
+    
+    <!-- Search -->
+    <div class="search-wrapper d-flex align-items-center me-3" id="searchWrapper">
+      <input type="text" class="form-control form-control-sm search-input" placeholder="Search" />
+      <button class="btn btn-outline-secondary btn-sm ms-2" id="searchBtn">🔍</button>
+    </div>
+
+    <!-- Burger -->
+    <button class="btn btn-outline-primary btn-sm" id="burgerBtn">☰</button>
+  </div>
+</nav>
+
+<!-- Hidden menu that shows inline -->
+<div class="container-fluid mt-2" id="navMenu" style="display: none;">
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Store</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Mac</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">IPad</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Iphone</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link disabled" href="#">Watch</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link disabled" href="#">Vision</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link disabled" href="#">AirPods</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link disabled" href="#">TV & Home</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link disabled" href="#">Entertainment</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link disabled" href="#">Accessories</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link disabled" href="#">Support</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="./Applesignup.html">Sign-Up</a>
+      </li>
+  </ul>
+</div>
+
+<!-- 🚀 Hero Section -->
+<section class="text-center py-5 bg-light">
+  <h1 class="display-4 fw-bold">Swag iPhone 🍏 </h1>
+  <p class="lead">Design by Lee.</p>
+  <h5 class="display-11 fw-italc">Simple. Powerful. Yours.</h5>
+  <img 
+  src="https://static.espreso.tv/uploads/photobank/224000_225000/224586_Apple-logo_new_960x380_0.webp" 
+  alt="iPhone Logo" 
+  class="img-fluid rounded" 
+  style="width: 150px; height: auto; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);"
+>
+</section>
+
+<!-- IPHONE VIDEO -->
+ <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+  <video 
+    src="https://www.apple.com/105/media/us/iphone/family/2025/e7ff365a-cb59-4ce9-9cdf-4cb965455b69/anim/welcome/xlarge.mp4#t=5.621011"
+    autoplay
+    muted
+    loop
+    playsinline
+    style="max-width: 100%; height: auto; border-radius: 8px;"
+  ></video>
+</div>
+<hr style="border: 3px solid black; width: 100%; margin: 1px auto;">
+<!-- ⚙️ Features -->
+<section class="container py-5">
+  <div class="row text-center">
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">🔋 Battery</h5>
+          <p class="card-text">All day power. Literally.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">📷 Camera</h5>
+          <p class="card-text">Crisp shots, day or night.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">⚡ Performance</h5>
+          <p class="card-text">So fast it’s rude.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- 📸 iPhone Slideshow Carousel (Smaller Version) -->
+<div id="iphoneCarousel" class="carousel slide d-flex justify-content-center mb-5" data-bs-ride="carousel">
+  <div class="carousel-inner rounded shadow" style="width: 60%; max-width: 400px;">
+    <div class="carousel-item active">
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/consider/apple_intelligence__gbh77cvflkia_xlarge.jpg" class="d-block w-100 rounded" alt="iPhone 1">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/consider/camera__exi2qfijti0y_medium.jpg" class="d-block w-100 rounded" alt="iPhone 2">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/consider/battery__2v7w6kmztvm2_medium.jpg" class="d-block w-100 rounded" alt="iPhone 3">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/consider/innovation__os9bmmo3mjee_medium.jpg" class="d-block w-100 rounded" alt="iPhone 4">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/consider/environment__e3v3gj88dl6q_medium.jpg" class="d-block w-100 rounded" alt="iPhone 5">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/consider/privacy__ckc0wa30o55y_medium.jpg" class="d-block w-100 rounded" alt="iPhone 6">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/consider/personalize__dwg8srggrbo2_medium.jpg" class="d-block w-100 rounded" alt="iPhone 7">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/consider/safety__bwp7rsowtjiu_xlarge.jpg" class="d-block w-100 rounded" alt="iPhone 8">
+    </div>
+  </div>
+  <br>
+  <!-- Navigation buttons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#iphoneCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#iphoneCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</section>
+ <!-- 📸 iPhone Slideshow Carousel (Smaller Version) -->
+<br>
+ <!-- Images display of 4 phones -->
+<hr style="border: 4px solid black; width: 100%; margin: 1px auto;">
+<h1 class="text-center fw-bold">Explore the lineup.</h1>
+<div class="container my-4">
+  <div class="row text-center">
+    
+    <div class="col-6 col-md-3 mb-4">
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/iphone_16pro__erw9alves2qa_xlarge.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><strong>iPhone 16 Pro</strong><br><small>The ultimate iPhone.</small><br><small>From $999 or $41.62/mo. for 24 mo.***</small></p>
+    </div>
+
+    <div class="col-6 col-md-3 mb-4">
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/iphone_16__c5bvots96jee_xlarge.png" class="img-fluid rounded shadow mb-2" alt="Image 2">
+      <p><strong>iPhone 16</strong><br><small>A total powerhouse..</small><br><small>From $799 or $33.29/mo. for 24 mo.***</small></p>
+    </div>
+
+    <div class="col-6 col-md-3 mb-4">
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/iphone_16e__cubm3xoy5qaa_xlarge.png" class="img-fluid rounded shadow mb-2" alt="Image 3">
+      <p><strong>iPhone 16e</strong><br><small>Latest iPhone. Greatest price.</small><br><small>From $599 or $24.95/mo. for 24 mo.***</small></p>
+    </div>
+
+    <div class="col-6 col-md-3 mb-4">
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/iphone_15__buwagff0mwwi_xlarge.png" class="img-fluid rounded shadow mb-2" alt="Image 4">
+      <p><strong>iPhone 15</strong><br><small>As amazing as ever.</small><br><small>From $699 or $29.12/mo. for 24 mo.***</small></p>
+    </div>
+
+  </div>
+</div>
+<!-- Images display TABLE -->
+<hr style="border: 1px solid black; width: 75%; margin: 1px auto;">
+
+<div class="container my-4">
+  <div class="row text-center">
+    
+    <div class="col-6 col-md-3 mb-4">
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_apple_intelligence__cy36nscjfrma_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>Apple Intelligence</small></p>
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_a18_pro__exkx38vklpci_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>A18 Pro chip with 6-core GPU</small></p>
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_camera_button__e83hkgwaefam_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>Camera Control</small></p>
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_iphone_16_pro_camera__edtadvfv6hg2_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>Pro camera system</small></p>
+      <p><small>Our most advanced 48MP Fusion camera</small></p>
+      <p><small>5x Telephoto camera</small></p>
+      <p><small>48MP Ultra Wide camera</small></p>
+      <p><small>Visual intelligence, to learn about your surroundings</small></p>
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_battery_100__den5pjokk60y_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>Up to 33 hours video playback</small></p>
+    </div>
+<!-- 2nd downfall -->
+    <div class="col-6 col-md-3 mb-4">
+       <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_apple_intelligence__cy36nscjfrma_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>Apple Intelligence</small></p>
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_a18__bpom9lrselte_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>A18 chip with 5-core GPU</small></p>
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_camera_button__e83hkgwaefam_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>Camera Control</small></p>
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_iphone_16_camera__fbzexjpz33iy_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>Advanced dual-camera system</small></p>
+      <p><small>48MP Fusion camera</small></p>
+      <p><small>2x Telephoto</small></p>
+      <p><small>12MP Ultra Wide camera</small></p>
+      <p><small>Visual intelligence, to learn about your surroundings</small></p>
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_battery_100__den5pjokk60y_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>Up to 27 hours video playback</small></p>
+    </div>
+<!-- 3nd downfall -->
+    <div class="col-6 col-md-3 mb-4">
+       <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_apple_intelligence__cy36nscjfrma_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>Apple Intelligence</small></p>
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_a18__bpom9lrselte_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>A18 chip with 4-core GPU</small></p>
+      <br>
+      <img src="https://img.icons8.com/?size=16&id=43891&format=png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <br>
+      <br>
+      <br>
+      
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_iphone_16e_camera__czsbuoy3qb8m_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>2‑in‑1 camera system</small></p>
+      <p><small>48MP Fusion camera</small></p>
+      <p><small>2x Telephoto</small></p>
+      <p><small>Visual intelligence, to learn about your surroundings</small></p>
+      <br>
+      <br>
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_battery_100__den5pjokk60y_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>Up to 26 hours video playback</small></p>
+    </div>
+<!-- 4nd downfall -->
+    <div class="col-6 col-md-3 mb-4">
+        <br>
+       <img src="https://img.icons8.com/?size=16&id=43891&format=png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+       <br>
+       <br>
+       <br>
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_a16__d1p797ptmg6e_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>A16 Bionic chip with 5-core GPU</small></p>
+      <br>
+      <img src="https://img.icons8.com/?size=16&id=43891&format=png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <br>
+      <br>
+      <br>
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_iphone_15_camera__gfh1sh7ru0ya_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>Dual-camera system</small></p>
+      <p><small>48MP Main camera</small></p>
+      <p><small>2x Telephoto</small></p>
+      <p><small>Ultra Wide camera</small></p>
+      <br>
+      <br>
+      <br>
+      <img src="https://www.apple.com/v/iphone/home/cc/images/overview/select/product_tile_icon_battery_100__den5pjokk60y_large.png" class="img-fluid rounded shadow mb-2" alt="Image 1">
+      <p><small>Up to 26 hours video playback3</small></p>
+    </div>
+
+  </div>
+</div>
+<br>
+<hr style="border: 4px solid black; width: 100%; margin: 1px auto;">
+<h1 class="text-center fw-bold">Find the privacy you’re searching for.</h1>
+
+<div class="container my-4">
+  <div class="row text-center justify-content-center align-items-start">
+    
+    <!-- Women in black -->
+    <div class="col-12 col-md-6 mb-4 d-flex justify-content-center">
+  <img 
+    src="https://www.apple.com/v/iphone/home/cc/images/overview/banner/privacy__ckc0wa30o55y_xlarge.jpg" 
+    class="img-fluid rounded shadow mb-3" 
+    alt="Image 1"
+    style="width: 9000px; max-width: 500%;">
+</div>
+
+<hr style="border: 4px solid black; width: 100%; margin: 1px auto;">
+<h1 class="text-center fw-bold">iPhone essentials.</h1>
+
+<div class="container my-4">
+  <div class="row text-center justify-content-center align-items-start">
+    
+    <!-- Image 1 -->
+    <div class="col-12 col-md-6 mb-4">
+      <img 
+        src="https://www.apple.com/v/iphone/home/cc/images/overview/essentials/magsafe__dac2joyve8wi_medium.jpg" 
+        class="img-fluid rounded shadow mb-3" 
+        alt="Image 1"
+        style="width: 8000px; max-width: 100%;">
+      <p>
+        <strong style="font-size: 1.2rem;">iPhone accessories</strong><br>
+        <small>Explore colorful cases,</small><br>
+        <small>USB‑C power adapters,</small><br>
+        <small>MagSafe accessories, and more.</small>
+      </p>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="col-12 col-md-6 mb-4">
+      <img 
+        src="https://www.apple.com/v/iphone/home/cc/images/overview/essentials/airtag__furx99ax8rm2_medium.jpg" 
+        class="img-fluid rounded shadow mb-3" 
+        alt="Image 2"
+        style="width: 5000px; max-width: 100%;">
+      <p>
+        <strong>AirTag</strong><br>
+        <small>Attach one to your keys. Put another in your backpack.<br>If they’re misplaced, just use the Find My app.</small>
+      </p>
+    </div>
+
+  </div>
+</div>
+<!--Simple image insert-->
+
+<hr style="border: 4px solid black; width: 100%; margin: 1px auto;">
+
+<h1 class="text-center fw-bold">Significant others..</h1>
+
+<div class="container my-4">
+  <div class="row justify-content-center text-center">
+    
+    <div class="col-12 mb-4 d-flex justify-content-center">
+      <img 
+        src="https://www.apple.com/v/iphone/home/cc/images/overview/augment/mac__b2km5lqjzk1y_large.jpg" 
+        class="img-fluid rounded shadow" 
+        alt="Image 1"
+        style="width: 2000px; max-width: 100%;">
+    </div>
+
+  </div>
+</div>
+
+  </div>
+</div>
+<!-- Accordions for FAQs START -->
+<h2 class="text-center fw-bold my-5">Frequently Asked Questions</h2>
+<div class="container mb-5">
+  <div class="accordion" id="faqAccordion">
+
+    <!-- FAQ 1 -->
+    <div class="accordion-item bg-black text-white border-secondary">
+      <h2 class="accordion-header" id="faqHeadingOne">
+        <button class="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+          When will the new iPhone be available?
+        </button>
+      </h2>
+      <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          The newest iPhone models are typically announced in September and available shortly after on apple.com and in stores.
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ 2 -->
+    <div class="accordion-item bg-black text-white border-secondary">
+      <h2 class="accordion-header" id="faqHeadingTwo">
+        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+          Do iPhones come with a charger?
+        </button>
+      </h2>
+      <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          iPhones come with a USB‑C to Lightning cable. Power adapters are sold separately to reduce environmental waste.
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div class="accordion-item bg-black text-white border-secondary">
+      <h2 class="accordion-header" id="faqHeadingThree">
+        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+          Can I trade in my old iPhone?
+        </button>
+      </h2>
+      <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          <p>Yes. Apple Trade In lets you exchange your eligible device for credit toward your next purchase or Apple Gift Card.
+          <br>
+          <hr> 
+          EXTRA - * Trade‑in values will vary based on the condition, year, and configuration of your eligible trade‑in device. Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit or for an Apple Gift Card. Trade‑in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In‑store trade‑in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in‑store and online trade‑in. Some stores may have additional requirements. Apple or its trade‑in partners reserve the right to refuse, cancel, or limit quantity of any trade‑in transaction for any reason. More details are available from Apple’s trade‑in partner for trade‑in and recycling of eligible devices. Restrictions and limitations may apply.
+*** Pricing for iPhone 16 and iPhone 16 Plus includes a $30 connectivity discount that requires activation with AT&T, Boost Mobile, T‑Mobile, or Verizon. Pricing shown for iPhone 15 and iPhone 15 Plus includes a $30 connectivity discount for Boost Mobile, T‑Mobile, and Verizon customers that requires activation and would otherwise be $30 higher for all other customers. Financing available to qualified customers, subject to credit approval and credit limit, and requires you to select Citizens One Apple iPhone Payments or Apple Card Monthly Installments (ACMI) as your payment type at checkout at Apple. You’ll need to select AT&T, Boost Mobile, T‑Mobile, or Verizon as your carrier when you check out. An iPhone purchased with ACMI is always unlocked, so you can switch carriers at any time, subject to your carrier’s terms. Taxes and shipping on items purchased using ACMI are subject to your card’s variable APR, not the ACMI 0% APR. ACMI is not available for purchases made online at special storefronts. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount. ACMI financing is subject to change at any time for any reason, including but not limited to, installment term lengths and eligible products. See the Apple Card Customer Agreement for more information about ACMI. Additional Citizens One Apple iPhone Payments terms are here.
+Apple Intelligence is available in beta on all iPhone 16 models, iPhone 15 Pro, iPhone 15 Pro Max, with Siri and device language set to the same supported language, as part of an iOS 18 software update. Supported languages include English, French, German, Italian, Portuguese (Brazil), Spanish, Japanese, Korean, and Chinese (Simplified). More languages are coming over the course of the year, including Vietnamese. Some features may not be available in all regions or languages.
+Cinematic mode available on iPhone 13 models, iPhone 14 models, iPhone 15 models, iPhone 16, iPhone 16 Plus, iPhone 16 Pro, and iPhone 16 Pro Max. Action mode available on iPhone 14 models, iPhone 15 models, iPhone 16, iPhone 16 Plus, iPhone 16 Pro, and iPhone 16 Pro Max. Audio Mix available on iPhone 16e, iPhone 16, iPhone 16 Plus, iPhone 16 Pro, and iPhone 16 Pro Max.
+Battery life claim refers to larger models. All battery claims depend on network configuration and many other factors; actual results will vary. Battery has limited recharge cycles and may eventually need to be replaced. Battery life and charge cycles vary by use and settings. See apple.com/batteries and apple.com/iphone/battery.html for more information.
+Data plan required. 5G is available in select markets and through select carriers. Speeds vary based on site conditions and carrier. For details on 5G support, contact your carrier and see apple.com/iphone/cellular.
+Accessories sold separately.
+<hr>
+The included USB-C Charge Cable is compatible with AirPods Pro (2nd generation) with MagSafe Charging Case (USB-C).
+iPhone 16 models are splash, water, and dust resistant and were tested under controlled laboratory conditions with a rating of IP68 under IEC standard 60529 (maximum depth of 6 meters up to 30 minutes). Splash, water, and dust resistance are not permanent conditions. Resistance might decrease as a result of normal wear. Do not attempt to charge a wet iPhone; refer to the user guide for cleaning and drying instructions. Liquid damage not covered under warranty.
+On a mass balance allocation.
+Responsible sourcing of wood fiber is defined in Apple’s Responsible Fiber Specification. We consider wood fibers to include bamboo.
+Roadside Assistance, Emergency SOS, and Messages via satellite are included for free for two years with the activation of any iPhone 14 or later model. Connection and response times vary based on location, site conditions, and other factors. Messages via satellite requires a carrier plan. SMS messaging via satellite is available on supported carriers. SMS message rates may apply. See support.apple.com/kb/HT213885 for more information.
+Visual intelligence is available in iOS 18.2 or later on iPhone 16, iPhone 16 Plus, iPhone 16 Pro, and iPhone 16 Pro Max; iOS 18.3 or later on iPhone 16e; and iOS 18.4 or later on iPhone 15 Pro and iPhone 15 Pro Max. Apple Intelligence must be on to use visual intelligence.
+All battery claims depend on network configuration and many other factors; actual results will vary. Battery has limited recharge cycles and may eventually need to be replaced. Battery life and charge cycles vary by use and settings. See apple.com/batteries and apple.com/iphone/battery.html for more information.
+Apple Card Monthly Installments (ACMI) is a 0% APR payment option that is only available if you select it at checkout in the U.S. for eligible products purchased at Apple Store locations, apple.com, the Apple Store app, or by calling 1‑800‑MY‑APPLE, and is subject to credit approval and credit limit. See support.apple.com/102730 for more information about eligible products. Existing customers: See your Customer Agreement for your variable APR. As of January 1, 2025, the variable APR on new Apple Card accounts ranges from 18.24% to 28.49%. You must elect to use ACMI at checkout. If you buy an ACMI‑eligible product with a one-time payment on Apple Card at checkout, that purchase is subject to your Apple Card’s variable APR, not the ACMI 0% APR. Taxes and shipping on items purchased using ACMI are subject to your Apple Card’s variable APR, not the ACMI 0% APR. In order to buy an iPhone with ACMI, you must select one of the following carriers: AT&T, Boost Mobile, T‑Mobile, or Verizon. An iPhone purchased with ACMI is always unlocked, so you can switch carriers at any time, subject to your carrier’s terms. ACMI is not available for purchases made online at the following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government and Veterans and Military Purchase Programs; or on refurbished devices. The last month’s payment for each product will be the product’s purchase price, less all other payments at the monthly payment amount. ACMI is subject to change at any time for any reason, including but not limited to installment term lengths and eligible products. See the Apple Card Customer Agreement for more information about ACMI.
+To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.
+<hr>
+Apple Payments Services LLC, a subsidiary of Apple Inc., is a service provider of Goldman Sachs Bank USA for Apple Card and Savings accounts. Neither Apple Inc. nor Apple Payments Services LLC is a bank.
+
+If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about Apple Card.
+
+AT&T iPhone 16 Special Deal: Monthly price (if shown) reflects net monthly payment, after application of AT&T trade‑in credit applied over 36 months with purchase of an iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, or iPhone 16 Plus, and trade‑in of eligible smartphone. Receive credit with purchase of an iPhone 16 Pro or iPhone 16 Pro Max of either $1000, $830, or $350 (based upon the model and condition of your trade‑in smartphone). Receive credit with purchase of an iPhone 16 or iPhone 16 Plus, of either $800, or $350 (based upon the model and condition of your trade‑in smartphone). Max bill credits will not exceed the cost of the device. Requires upgrade of an existing line or activation of a new line and purchase of a new iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, or iPhone 16 Plus, on qualifying 36 month 0% APR installment plan, subject to carrier credit qualification. Customers purchasing this offer through Apple cannot add the Next Up Anytime option. $0 down for well qualified customers only, or down payment may be required and depends on a variety of factors. Tax on full retail price due at sale. Requires activation on eligible AT&T unlimited plan. AT&T may temporarily slow data speeds if the network is busy. If you cancel eligible wireless service, credits will stop and you will owe the remaining device balance. Activation/Upgrade Fee: $35. Trade in device may not be on existing installment plan. Bill credits are applied as a monthly credit over the 36 month installment plan. Credits start within 3 bills. Will receive catchup credits once credits start. Wireless line must be on an installment agreement, active, and in good standing for 30 days to qualify. Installment agreement starts when device is shipped. To get all credits, device must remain on agreement for entire term and you must keep eligible service on device for entire installment term. Limited time offer; subject to change. Limits: one trade‑in per qualifying purchase and one credit per line. May not be combinable with other offers, discounts, or credits. Purchase, financing, other limits, and restrictions apply. Price for iPhone 16 and iPhone 16 Plus includes $30 AT&T connectivity discount. Activation required.
+
+Boost Mobile iPhone 16 Special Deal: Buy an iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, or iPhone 16 Plus and get $1000 in bill credits (not to exceed the cost of the iPhone) applied over 36 months. No trade-in required. If you are trading in a device with this deal, trade-in value will be applied as additional bill credits over 36 months. Monthly price (if shown) reflects net monthly payment, after application of $1000 in bill credit (not to exceed the cost of the iPhone purchased) and trade-in credit (if applicable) applied over 36 months respectively. Requires activation of a new line, Boost Mobile Infinite Access plan and purchase on qualifying 36-month 0% APR installment plan, subject to carrier credit qualification. After making 12 installment payments, you may upgrade to a new iPhone and get up to $1000 in bill credits (not to exceed the cost of the iPhone) applied over 36 months for the new iPhone on the Infinite Access plan and purchase on new qualifying 36-month 0% APR installment plan, subject to carrier credit qualification. Tax on full retail price due at sale. If you cancel eligible wireless service, credits will stop and you will owe the remaining device balance. Bill credits are applied as a monthly credit over the 36-month installment plan. Trade-in credits start within 3 bills. Installment agreement starts when device is shipped. To get all credits, device must remain on agreement for entire term and you must keep eligible service on device for entire installment term. Limited-time offer; subject to change. Limits: one credit per line. May not be combined with other offers, discounts, or credits. Purchase, financing, other limits, and restrictions apply. Price for iPhone 16 and iPhone 16 Plus includes $30 Boost Mobile connectivity discount. Activation required.
+
+T‑Mobile iPhone 16 Special Deal: Monthly price (if shown) reflects net monthly payment, after application of T‑Mobile trade-in credit applied over 24 months with purchase of an iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, or iPhone 16 Plus and trade-in of eligible smartphone.
+
+Existing customers: Receive credit with purchase of an iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, or iPhone 16 Plus (based upon the model and condition of your trade-in smartphone) of $1000, $800, or $400 for customers on a Go5G Next plan (excluding 55, Military, First Responder plans) ($100+/mo. plan after AutoPay discount if applicable); or $800 or $400 for customers on a Go5G Plus plan (excluding 55, Military, First Responder plans) ($85+/mo. plan after AutoPay discount if applicable); or $800, $600, or $300 for customers on a Go5G Next 55, Military, or First Responder plan ($85+/mo. plan after AutoPay discount if applicable); or $600 or $300 for customers on a Go5G Plus 55, Military, or First Responder plan ($75+/mo. plan after AutoPay discount if applicable); or $300 or $150 for customers on a Go5G, Magenta, Magenta MAX, or Essentials plan ($60+/mo. plan after AutoPay discount if applicable). Must be an existing T‑Mobile customer.
+
+Add-a-Line customers: Receive credit with purchase of an iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, or iPhone 16 Plus (based upon the model and condition of your trade-in smartphone) of $1000, $800, or $400 for customers on a Go5G Next plan (excluding 55, Military, First Responder plans) ($100+/mo. plan after AutoPay discount if applicable); or $800 or $400 for customers on a Go5G Plus plan (excluding 55, Military, First Responder plans) ($85+/mo. plan after AutoPay discount if applicable); or $800, $600, or $300 for customers on a Go5G Next 55, Military, or First Responder plan ($85+/mo. plan after AutoPay discount if applicable); or $600 or $300 for customers on a Go5G Plus 55, Military, or First Responder plan ($75+/mo. plan after AutoPay discount if applicable); or $800 or $400 for customers on an Essentials, Magenta/MAX or Go5G plan (excluding 55, Military, First Responder plans) ($60+/mo. plan after AutoPay discount if applicable); or $600 or $300 for customers on an Essentials 55 Choice, Magenta/MAX, or Go5G 55, Military, or First Responder plan ($45+/mo. plan after AutoPay discount if applicable). Must be a T‑Mobile customer adding a new line to an existing T‑Mobile account.
+
+New customers: Receive credit with purchase of an iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, or iPhone 16 Plus (based upon the model and condition of your trade-in smartphone) of $1000, $800, or $400 for customers on a Go5G Next plan (excluding 55, Military, First Responder plans) ($100+/mo. plan after AutoPay discount if applicable); or $800 or $400 for customers on a Go5G Plus plan (excluding 55, Military, First Responder plans) ($85+/mo. plan after AutoPay discount if applicable); or $800, $600, or $300 for customers on a Go5G Next 55, Military, or First Responder plan ($85+/mo. plan after AutoPay discount if applicable); or $600 or $300 for customers on a Go5G Plus 55, Military, or First Responder plan ($75+/mo. plan after AutoPay discount if applicable); or $800 or $400 for customers on an Essentials or Go5G plan (excluding 55, Military, First Responder plans) ($60+/mo. plan after AutoPay discount if applicable; or $600 or $300 for customers on an Essentials 55 Choice, or Go5G 55, Military, or First Responder plan ($45+/mo. plan after AutoPay discount if applicable). Must be a new T‑Mobile customer.
+
+Max bill credits will not exceed the cost of the device. Credit comprised of (i) Apple instant trade-in credit at checkout and (ii) T‑Mobile monthly bill credits applied over 24 months. Allow 2 bill cycles from valid submission and validation of trade-in. Tax on pre-credit price due at sale. Limited-time; subject to change. Qualifying credit, data plan, and trade-in (e.g., iPhone 15 Pro Max) in good condition required. Max 4 promotions on any iPhone per account. May not be combinable with some offers, discounts, or promotions. Activation required. Contact T‑Mobile before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due. Bill credits end if you pay off early.
+
+Verizon iPhone 16 Special Deal: Monthly price (if shown) reflects net monthly payment, after application of Verizon trade-in credit applied over 36 months with purchase of an iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, or iPhone 16 Plus.
+
+Existing customers: Customers on an Unlimited Ultimate plan, Unlimited Plus plan, or Unlimited Welcome plan (min. $65/mo w/Auto Pay (+taxes/fees) for 36 mos) receive: $1000 credit (based upon the model and condition of your trade-in smartphone) with purchase of an iPhone 16 Pro or iPhone 16 Pro Max; $930 credit (based upon the model and condition of your trade-in smartphone) with purchase of an iPhone 16 Plus; or $830 credit (based upon the model and condition of your trade-in smartphone) with purchase of an iPhone 16. Must be an existing Verizon customer.
+
+New or Add-a-Line customers: Customers on an Unlimited Ultimate plan, Unlimited Plus plan, or Unlimited Welcome plan (min. $65/mo w/Auto Pay (+taxes/fees) for 36 mos) receive: $1000 credit (based upon the model and condition of your trade-in smartphone) with purchase of an iPhone 16 Pro or iPhone 16 Pro Max; $930 credit (based upon the model and condition of your trade-in smartphone) with purchase of an iPhone 16 Plus; or $830 credit (based upon the model and condition of your trade-in smartphone) with purchase of an iPhone 16. Must be a new Verizon customer or adding a new line to an existing Verizon account.
+
+Max bill credits will not exceed the cost of the device. Credit comprised of (i) Apple instant trade-in credit at checkout and (ii) Verizon monthly bill credits applied over 36 months. Customer must remain in the Verizon Device Payment Program for 36 months to receive the full benefit of the Verizon bill credits. Bill credits may take 1-2 bill cycles to appear. If it takes two cycles for bill credits to appear, you'll see the credit for the first cycle on your second bill in addition to that month's credit. Requires purchase and activation of a new iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16, or iPhone 16 Plus with the Verizon Device Payment Program at 0% APR for 36 months, subject to carrier credit qualification, and iPhone availability and limits. Taxes and shipping not included in monthly price. Sales tax may be assessed on full value of new iPhone. Requires eligible unlimited service plan. Requires trade-in of eligible device in eligible condition. Must be at least 18 to trade-in. Apple or its trade-in partners reserve the right to refuse or limit any trade-in transaction for any reason. In-store trade-in requires presentation of a valid, government-issued photo ID (local law may require saving this information). In-store promotion availability subject to local law; speak to a Specialist to learn more. Limited-time offer; subject to change. Additional terms from Apple, Verizon, and Apple's trade-in partners may apply. Price for iPhone 16 and iPhone 16 Plus includes $30 Verizon connectivity discount. Activation required.
+
+AT&T iPhone 16e Special Deal: Buy an iPhone 16e 128 GB and get $383.36 in bill credits applied over 36 months. Buy an iPhone 16e 256 GB and get $303.36 in bill credits applied over 36 months. Buy an iPhone 16e 512 GB and get $323.36 in bill credits applied over 36 months. Requires upgrade of an existing line (or activation of a new line) and purchase on qualifying 36-month 0% APR installment plan, subject to carrier credit qualification. $0 down for well-qualified customers only, or down payment may be required and depends on a variety of factors. Tax on full retail price due at sale. Requires activation on eligible AT&T unlimited plan. AT&T may temporarily slow data speeds if the network is busy. If you cancel eligible wireless service, credits will stop and you will owe the remaining device balance. Activation/Upgrade Fee: $35. Bill credits are applied as a monthly credit over the 36-month installment plan. Credits start within 3 bills. Will receive catch-up credits once credits start. Wireless line must be on an installment agreement, active, and in good standing for 30 days to qualify. Installment agreement starts when device is shipped. To get all credits, device must remain on agreement for entire term and you must keep eligible service on device for entire installment term. Limited-time offer; subject to change. Limits: one credit per line. May not be combinable with other offers, discounts, or credits. Purchase, financing, other limits, and restrictions apply. Activation required.
+
+T‑Mobile iPhone 16e Special Deal: Monthly price (if shown) reflects net monthly payment, after application of T‑Mobile trade-in credit applied over 24 months with purchase of an iPhone 16e and trade-in of eligible smartphone.
+
+Existing customers: Receive credit with purchase of an iPhone 16e (based upon the model and condition of your trade-in smartphone) of $899, $800, or $400 for customers on a Go5G Next plan (excluding 55, Military, First Responder plans) ($100+/mo. plan after AutoPay discount if applicable); or $800 or $400 for customers on a Go5G Plus plan (excluding 55, Military, First Responder plans) ($85+/mo. plan after AutoPay discount if applicable); or $800, $600, or $300 for customers on a Go5G Next 55, Military, or First Responder plan ($85+/mo. plan after AutoPay discount if applicable); or $600 or $300 for customers on a Go5G Plus 55, Military, or First Responder plan ($75+/mo. plan after AutoPay discount if applicable); or $300 or $150 for customers on a Go5G, Magenta, Magenta MAX, or Essentials plan ($60+/mo. plan after AutoPay discount if applicable). Must be an existing T‑Mobile customer.
+
+Add-a-Line customers: Receive credit with purchase of an iPhone 16e (based upon the model and condition of your trade-in smartphone) of $899, $800, or $400 for customers on a Go5G Next plan (excluding 55, Military, First Responder plans) ($100+/mo. plan after AutoPay discount if applicable); or $800 or $400 for customers on a Go5G Plus plan (excluding 55, Military, First Responder plans) ($85+/mo. plan after AutoPay discount if applicable); or $800, $600, or $300 for customers on a Go5G Next 55, Military, or First Responder plan ($85+/mo. plan after AutoPay discount if applicable); or $600 or $300 for customers on a Go5G Plus 55, Military, or First Responder plan ($75+/mo. plan after AutoPay discount if applicable); or $800 or $400 for customers on an Essentials, Magenta/MAX or Go5G plan (excluding 55, Military, First Responder plans) ($60+/mo. plan after AutoPay discount if applicable); or $600 or $300 for customers on an Essentials 55 Choice, Magenta/MAX, or Go5G 55, Military, or First Responder plan ($45+/mo. plan after AutoPay discount if applicable). Must be a T‑Mobile customer adding a new line to an existing T‑Mobile account.
+
+New customers: Receive credit with purchase of an iPhone 16e (based upon the model and condition of your trade-in smartphone) of $899, $800, or $400 for customers on a Go5G Next plan (excluding 55, Military, First Responder plans) ($100+/mo. plan after AutoPay discount if applicable); or $800 or $400 for customers on a Go5G Plus plan (excluding 55, Military, First Responder plans) ($85+/mo. plan after AutoPay discount if applicable); or $800, $600, or $300 for customers on a Go5G Next 55, Military, or First Responder plan ($85+/mo. plan after AutoPay discount if applicable); or $600 or $300 for customers on a Go5G Plus 55, Military, or First Responder plan ($75+/mo. plan after AutoPay discount if applicable); or $800 or $400 for customers on an Essentials or Go5G plan (excluding 55, Military, First Responder plans) ($60+/mo. plan after AutoPay discount if applicable; or $600 or $300 for customers on an Essentials 55 Choice, or Go5G 55, Military, or First Responder plan ($45+/mo. plan after AutoPay discount if applicable). Must be a new T‑Mobile customer.
+
+Max bill credits will not exceed the cost of the device. Credit comprised of (i) Apple instant trade-in credit at checkout and (ii) T‑Mobile monthly bill credits applied over 24 months. Allow 2 bill cycles from valid submission and validation of trade-in. Tax on pre-credit price due at sale. Limited-time; subject to change. Qualifying credit, data plan, and trade-in (e.g., iPhone 15 Pro Max) in good condition required. Max 4 promotions on any iPhone per account. May not be combinable with some offers, discounts, or promotions. Activation required. Contact T‑Mobile before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due. Bill credits end if you pay off early.
+
+Verizon iPhone 16e Special Deal: Monthly price (if shown) reflects net monthly payment, after application of Verizon trade-in credit applied over 36 months with purchase of an iPhone 16e.
+
+Existing customers: Customers on an Unlimited Ultimate plan, Unlimited Plus plan, or Unlimited Welcome plan (min. $65/mo w/Auto Pay (+taxes/fees) for 36 mos) receive $600 credit (based upon the model and condition of your trade-in smartphone) with purchase of an iPhone 16e. Must be an existing Verizon customer.
+
+New or Add-a-Line customers: Customers on an Unlimited Ultimate plan, Unlimited Plus plan, or Unlimited Welcome plan (min. $65/mo w/Auto Pay (+taxes/fees) for 36 mos) receive $600 credit (based upon the model and condition of your trade-in smartphone) with purchase of a iPhone 16e. Must be a new Verizon customer or adding a new line to an existing Verizon account.
+
+Max bill credits will not exceed the cost of the device. Credit comprised of (i) Apple instant trade-in credit at checkout and (ii) Verizon monthly bill credits applied over 36 months. Customer must remain in the Verizon Device Payment Program for 36 months to receive the full benefit of the Verizon bill credits. Bill credits may take 1-2 bill cycles to appear. If it takes two cycles for bill credits to appear, you'll see the credit for the first cycle on your second bill in addition to that month's credit. Requires purchase and activation of a new iPhone 16e with the Verizon Device Payment Program at 0% APR for 36 months, subject to carrier credit qualification, and iPhone availability and limits. Taxes and shipping not included in monthly price. Sales tax may be assessed on full value of new iPhone. Requires eligible unlimited service plan. Requires trade-in of eligible device in eligible condition. Must be at least 18 to trade-in. Apple or its trade-in partners reserve the right to refuse or limit any trade-in transaction for any reason. In-store trade-in requires presentation of a valid, government-issued photo ID (local law may require saving this information). In-store promotion availability subject to local law; speak to a Specialist to learn more. Limited-time offer; subject to change. Additional terms from Apple, Verizon, and Apple's trade-in partners may apply. Activation required.
+
+AT&T iPhone 15 Special Deal: Buy an iPhone 15 128 GB and get $441.36 in bill credits applied over 36 months. Buy an iPhone 15 256 GB and get $361.36 in bill credits applied over 36 months. Buy an iPhone 15 512 GB and get $381.36 in bill credits applied over 36 months. Requires upgrade of an existing line (or activation of a new line) and purchase on qualifying 36-month 0% APR installment plan, subject to carrier credit qualification. $0 down for well-qualified customers only, or down payment may be required and depends on a variety of factors. Tax on full retail price due at sale. Requires activation on eligible AT&T unlimited plan. AT&T may temporarily slow data speeds if the network is busy. If you cancel eligible wireless service, credits will stop and you will owe the remaining device balance. Activation/Upgrade Fee: $35. Bill credits are applied as a monthly credit over the 36-month installment plan. Credits start within 3 bills. Will receive catch-up credits once credits start. Wireless line must be on an installment agreement, active, and in good standing for 30 days to qualify. Installment agreement starts when device is shipped. To get all credits, device must remain on agreement for entire term and you must keep eligible service on device for entire installment term. Limited-time offer; subject to change. Limits: one credit per line. May not be combinable with other offers, discounts, or credits. Purchase, financing, other limits, and restrictions apply. Activation required.
+
+T‑Mobile iPhone 15 Special Deal: Monthly price (if shown) reflects net monthly payment, after application of T‑Mobile trade-in credit applied over 24 months with purchase of an iPhone 15 or iPhone 15 Plus and trade-in of eligible smartphone.
+
+Existing customers: Receive credit with purchase of an iPhone 15 or iPhone 15 Plus (based upon the model and condition of your trade-in smartphone) of $1000, $800, or $400 for customers on a Go5G Next plan (excluding 55, Military, First Responder plans) ($100+/mo. plan after AutoPay discount if applicable); or $800 or $400 for customers on a Go5G Plus plan (excluding 55, Military, First Responder plans) ($85+/mo. plan after AutoPay discount if applicable); or $800, $600, or $300 for customers on a Go5G Next 55, Military, or First Responder plan ($85+/mo. plan after AutoPay discount if applicable); or $600 or $300 for customers on a Go5G Plus 55, Military, or First Responder plan ($75+/mo. plan after AutoPay discount if applicable); or $300 or $150 for customers on a Go5G, Magenta, Magenta MAX, or Essentials plan ($60+/mo. plan after AutoPay discount if applicable). Must be an existing T‑Mobile customer.
+
+Add-a-Line customers: Receive credit with purchase of an iPhone 15 or iPhone 15 Plus (based upon the model and condition of your trade-in smartphone) of $1000, $800, or $400 for customers on a Go5G Next plan (excluding 55, Military, First Responder plans) ($100+/mo. plan after AutoPay discount if applicable); or $800 or $400 for customers on a Go5G Plus plan (excluding 55, Military, First Responder plans) ($85+/mo. plan after AutoPay discount if applicable); or $800, $600, or $300 for customers on a Go5G Next 55, Military, or First Responder plan ($85+/mo. plan after AutoPay discount if applicable); or $600 or $300 for customers on a Go5G Plus 55, Military, or First Responder plan ($75+/mo. plan after AutoPay discount if applicable); or $800 or $400 for customers on an Essentials, Magenta/MAX or Go5G plan (excluding 55, Military, First Responder plans) ($60+/mo. plan after AutoPay discount if applicable); or $600 or $300 for customers on an Essentials 55 Choice, Magenta/MAX, or Go5G 55, Military, or First Responder plan ($45+/mo. plan after AutoPay discount if applicable). Must be a T‑Mobile customer. adding a new line to an existing T‑Mobile account.
+
+New customers: Receive credit with purchase of an iPhone 15 or iPhone 15 Plus(based upon the model and condition of your trade-in smartphone) of $1000, $800, or $400 for customers on a Go5G Next plan (excluding 55, Military, First Responder plans) ($100+/mo. plan after AutoPay discount if applicable); or $800 or $400 for customers on a Go5G Plus plan (excluding 55, Military, First Responder plans) ($85+/mo. plan after AutoPay discount if applicable); or $800, $600, or $300 for customers on a Go5G Next 55, Military, or First Responder plan ($85+/mo. plan after AutoPay discount if applicable); or $600 or $300 for customers on a Go5G Plus 55, Military, or First Responder plan ($75+/mo. plan after AutoPay discount if applicable); or $800 or $400 for customers on an Essentials or Go5G plan (excluding 55, Military, First Responder plans) ($60+/mo. plan after AutoPay discount if applicable; or $600 or $300 for customers on an Essentials 55 Choice, or Go5G 55, Military, or First Responder plan ($45+/mo. plan after AutoPay discount if applicable). Must be a new T‑Mobile customer.
+
+Max bill credits will not exceed the cost of the device. Credit comprised of (i) Apple instant trade-in credit at checkout and (ii) T‑Mobile monthly bill credits applied over 24 months. Allow 2 bill cycles from valid submission and validation of trade-in. Tax on pre-credit price due at sale. Limited-time; subject to change. Qualifying credit, data plan, and trade-in (e.g., iPhone 15 Pro Max) in good condition required. Max 4 promotions on any iPhone per account. May not be combinable with some offers, discounts, or promotions. Activation required. Contact T‑Mobile before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due. Bill credits end if you pay off early.
+<hr>
+Requires an iPhone and Apple Watch with second-generation Ultra Wideband chip. Ultra Wideband availability varies by region.
+Honor of Kings: World coming at a later date.
+To use Apple Pay you need a supported card from a participating card issuer. To check if your card is compatible with Apple Pay, contact your card issuer.
+<hr>
+Apple Pay is not available in all markets. View Apple Pay countries and regions.
+
+Features are subject to change. Some features, applications, and services may not be available in all regions or all languages and may require specific hardware and software. For more information, see Feature Availability.
+
+Apple Pay is a service provided by Apple Payments Services LLC, a subsidiary of Apple Inc. Neither Apple Inc. nor Apple Payments Services LLC is a bank. Any card used in Apple Pay is offered by the card issuer.</p>
+        </div>
+        <!--END OF TAP DROP DOWN-->
+      </div>
+    </div>
+
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+<!-- 🧼 Footer -->
+<footer class="bg-dark text-white text-center p-3">
+  <p class="mb-0">&copy; 2025  Swag iClone. Made with True HTML-Touch & Bootstrap.V.pop.</p>
+</footer>
+
+
+<!--SCRIPT SECTION-->
+<!-- JS (Optional) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const burgerBtn = document.getElementById("burgerBtn");
+  const navMenu = document.getElementById("navMenu");
+  const searchBtn = document.getElementById("searchBtn");
+  const searchWrapper = document.getElementById("searchWrapper");
+
+  burgerBtn.addEventListener("click", () => {
+    // Toggle nav menu visibility
+    navMenu.style.display = navMenu.style.display === "none" ? "block" : "none";
+  });
+
+  searchBtn.addEventListener("click", () => {
+    // Toggle search expansion
+    searchWrapper.classList.toggle("active");
+  });
+</script>
+<style>
+  /* Make carousel control arrows black and visible */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: black;
+    background-size: 50% 50%;
+    border-radius: 50%;
+    padding: 20px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: auto;
+  }
+</style>
+
+<!-- 🍏 Floating Black Apple Logo (Darker & Bigger) -->
+<img 
+  src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" 
+  alt="Floating Apple" 
+  class="floating-apple-home">
+
+<style>
+  .floating-apple-home {
+    position: fixed;
+    width: 300px;
+    opacity: 0.10;
+    z-index: 0; /* stays behind content */
+    animation: appleFloatX 30s linear infinite alternate,
+               appleFloatY 20s ease-in-out infinite alternate;
+  }
+
+  @keyframes appleFloatX {
+    0% { left: 0; }
+    100% { left: 85%; }
+  }
+
+  @keyframes appleFloatY {
+    0% { top: 10%; }
+    100% { top: 80%; }
+  }
+</style>
+
+<!--4 image hover effect POP-->
+<style>img.img-fluid:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);}
+  </style>
+
+
+</body>
+</html>
